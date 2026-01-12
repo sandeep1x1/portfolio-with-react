@@ -1,0 +1,94 @@
+# WordPress Core Files
+# Ignore everything in the root except the files we want to track
+/*
+!.gitignore
+!README.md
+!wp-content/
+
+# WordPress Core
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/license.txt
+/readme.html
+/.htaccess
+/index.php
+
+# WordPress Config
+wp-config.php
+wp-config-sample.php
+local-xdebuginfo.php
+
+# WordPress Content - Ignore default themes and plugins
+wp-content/themes/twenty*/
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+wp-content/index.php
+
+# Keep our custom theme
+!wp-content/themes/portfolio-react-theme/
+
+# Uploads directory (media files)
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build outputs
+/dist/
+/build/
+*.map
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.sql
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# WordPress specific
+sitemap.xml
+sitemap.xml.gz
+wp-sitemap.xml
+wp-sitemap.xsl
+
+# Composer (if you use it later)
+/vendor/
+composer.lock
+
+# Our custom theme - but ignore build artifacts within it
+wp-content/themes/portfolio-react-theme/node_modules/
+wp-content/themes/portfolio-react-theme/dist/
+wp-content/themes/portfolio-react-theme/.cache/
